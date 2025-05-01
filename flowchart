@@ -1,0 +1,15 @@
+digraph {
+	A [label=Start]
+	B [label="Load Dataset"]
+	C [label="Preprocessing (Lowercase, Remove Punctuation)"]
+	D [label="Tokenization & Stopword Removal"]
+	E [label="TF-IDF Vectorization"]
+	F [label="Train/Test Split"]
+	G [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+}
